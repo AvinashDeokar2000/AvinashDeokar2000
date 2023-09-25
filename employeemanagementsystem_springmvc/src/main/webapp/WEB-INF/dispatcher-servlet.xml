@@ -14,7 +14,7 @@
 	<!-- Handler Mapping -->
 	<context:annotation-config />
 	<context:component-scan
-		base-package="com.jspiders.springmvc1" />
+		base-package="com.jspiders.employeemanagementsystem_springmvc" />
 
 	<!-- viewResolver configuration -->
 	<bean

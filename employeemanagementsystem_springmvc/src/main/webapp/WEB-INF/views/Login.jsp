@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<%
-String msg = (String) request.getAttribute("msg");
-%>
+    pageEncoding="UTF-8"%>
+    <%
+    String msg = (String) request.getAttribute("msg");
+    %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,9 +31,8 @@ body {
 </style>
 </head>
 <body>
-
-	<div align="center">
-		<%
+<div align="center">
+        <%
 		if (msg != null) {
 		%>
 		<h4>
@@ -42,7 +41,7 @@ body {
 		<%
 		}
 		%>
-		<fieldset>
+<fieldset>
 			<legend>Login Page</legend>
 			<form action="./login" method="post">
 				<table>
@@ -59,8 +58,7 @@ body {
 			</form>
 
 		</fieldset>
-		<a href="http://localhost:8080/springmvc1/createAccount">CreateAccount</a>
-	</div>
-
+		<a href="http://localhost:8080/employeemanagementsystem_springmvc/createAccount">CreateAccount</a>
+</div>
 </body>
 </html>
