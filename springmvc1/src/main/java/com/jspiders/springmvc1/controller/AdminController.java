@@ -19,21 +19,21 @@ public class AdminController {
 	//Create Account Page Controller
 	@GetMapping("/createAccount")
 	public String createAccountPage(ModelMap map) {
-		AdminPOJO pojo = service.getAdmin();
+		//AdminPOJO pojo = service.getAdmin();
 		
-		if (pojo != null) {
-			map.addAttribute("msg", "Account already exists..!");
-			return "Login";
-		}
+//		if (pojo != null) {
+//			map.addAttribute("msg", "Account already exists..!");
+//			return "Login";
+//		}
 		return "CreateAccount";
 	}
 	
 	//Create Account Controller
 	@PostMapping("/createAccount")
-	public String createAccount(@RequestParam String username,
-							@RequestParam String password,
+	public String createAccount(@RequestParam String username, @RequestParam String email, @RequestParam long contact, @RequestParam String city,
+							@RequestParam String password, @RequestParam String confirmPassword,
 							ModelMap map) {
-		AdminPOJO pojo = service.createAccount(username, password);
+		AdminPOJO pojo = service.createAccount(username, email, contact, city, password, confirmPassword);
 		
 		//Success
 		if (pojo != null) {

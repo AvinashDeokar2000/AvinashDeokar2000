@@ -1,1 +1,62 @@
-
+What Are Microservices?
+The best way to explain microservices – and microservices-based applications – is to start with a description of monolithic applications. 
+
+Enterprises have long relied on monolithic applications to run their operations and provide different functions and services to their customers. All the code for a monolithic application’s services and functions is found within the same piece of programming.
+
+TechTarget describes monolithic applications like this:
+
+Monolithic software is designed to be self-contained; components of the program are interconnected and interdependent rather than loosely coupled as is the case with modular software programs. In a tightly-coupled architecture, each component and its associated components must be present in order for code to be executed or compiled.
+
+Furthermore, if any program component must be updated, the whole application has to be rewritten, whereas in a modular application, any separate module (such as a microservice) can be changed without affecting other parts of the program. 
+
+A monolithic application architecture makes sense when an enterprise is first starting out, but eventually, enterprises will need to upgrade and scale their monoliths as their businesses and customer-bases grow. This can be challenging because the code for the monolith’s services and functions is tightly-coupled and highly interdependent. 
+
+The more developers bolt new services and functions onto the monolith, the more difficult it becomes to untangle the code for future upgrades. Eventually, it’s virtually impossible to change even a small part of the monolith without Refactoring the entire application. Moreover, scaling a monolithic application is also inefficient because developers have to scale the whole application – instead of simply scaling an individual function or service.
+
+The upgrading and scaling challenges of monolithic applications eventually led developers to create the microservices-based application architecture. The microservices architectural style breaks the monolith into its component functions and services. Then it develops and runs each service as a small, autonomous, independent application, i.e., microservice. Finally, it loosely connects these microservices – usually with RESTful APIs – so they work together to form the larger application.
+
+Techopedia describes microservices like this:
+
+Microservices is the idea of offering a broader platform, application or service as a collection of combined services. These microservices provide specialized, fine-grained cooperation that makes up the more comprehensive architecture model.
+
+The use of microservices in apps can be structured in many different ways. Within the application, a microservice does one defined job – for example, authenticating users, generating a particular data model or creating a particular report. The idea is that these microservices, which are often language-agnostic, can fit into any type of app and communicate or cooperate with each other to achieve the overall goal.
+
+APIs vs Microservices: How They Work Together
+Now that you have a better understanding of RESTful APIs and microservices, you can see how these two concepts work together to build a microservices-based application architecture: Microservices function as the “building-blocks” of the application by performing various services, while “RESTful APIs” function as the “glue” that integrates the microservices into an application.
+
+When developers use RESTful APIs and microservices to create a modular, service-oriented architecture like this, enterprises can achieve the following benefits:
+
+Scalability: Applications are easier and more cost-effective to scale because you only need to scale the services that need it and not the entire architecture.
+Cost savings: Cost savings on development since upgrades are faster and easier.
+Resiliency: Greater ability to prevent and contain failure cascades.
+Easy upgrades: A pluggable, modular architecture that facilitates adding, upgrading, or removing services and functions faster and with less chance of coding conflicts.
+Rapid development: Faster time to market when it comes to developing new functions and services.
+Security and compliance: Improved data security and compliance due to the containment of microservices – which work independently and don’t have knowledge of each other. RESTful API connections between microservices let you define strict rules for data access and sharing.
+Language agnostic: The ability to connect modular services that were programmed in different languages regardless of what kind of platform they’re running on. 
+Smaller teams: Smaller, more agile development teams for each microservice.
+Agility: Greater agility to respond faster to changing business needs.
+Cloud-based architecture: Microservices usually run on cloud-based services like Amazon AWS.
+For a more detailed discussion of these benefits, please read our guide on the “Benefits Of Microservices.”
+
+Challenges and Considerations when using REST APIs with Microservices
+The rise of microservices architecture has revolutionized the way modern software applications are designed and developed. With their focus on modularity, flexibility, and scalability, microservices have become the go-to approach for many developers. One popular way to implement communication between these modular services is using REST APIs. While the combination of REST APIs and microservices can lead to highly efficient and maintainable applications, there are several challenges and considerations to keep in mind. In this section, we will explore the key aspects that developers must address to ensure the successful integration of REST APIs with microservices.
+
+API Design and Consistency:
+A well-designed API is crucial for the seamless interaction between microservices. However, ensuring consistency across multiple APIs can be challenging. To maintain a uniform interface, developers should adhere to a standardized set of principles, such as RESTful API Best Practices, and utilize common design patterns. Additionally, documenting the API design and using API specification tools like Swagger or OpenAPI can help ensure a consistent and maintainable API ecosystem.
+
+Network Latency and Performance:
+The distributed nature of microservices often results in increased network latency, which can negatively impact application performance. To minimize latency, developers should optimize API calls by consolidating multiple requests into a single one, using pagination, and implementing server-side caching. Employing technologies such as HTTP/2, gRPC, or GraphQL can also help improve communication efficiency between microservices.
+
+Security
+Securing communication between microservices is critical to protect sensitive data and prevent unauthorized access. Developers should implement authentication and authorization mechanisms, such as OAuth 2.0 or JSON Web Tokens (JWT), to ensure secure data exchange between services. Additionally, using HTTPS encryption and carefully managing API keys can further enhance the security of REST APIs.
+
+Error Handling
+Robust error handling is essential to ensure the reliability and resiliency of applications built with microservices. When designing REST APIs, developers should follow established conventions for returning status codes and error messages, providing clients with clear and actionable information. Implementing the Circuit Breaker Pattern can also help prevent cascading failures between services.
+
+Monitoring and Observability
+Monitoring and observability are critical for maintaining the health and performance of microservices-based applications. Developers should incorporate logging, tracing, and metrics collection into their REST APIs to gain insights into system behavior and detect potential issues. Tools such as Prometheus, Zipkin, and Elasticsearch can be employed to aggregate and analyze this data, facilitating proactive issue resolution and system optimization.
+
+How to Build RESTful APIs in Minutes
+Having discussed the differences between RESTful APIs and microservices, there’s one issue we haven’t addressed: The fact that it takes a tremendous amount of time to hand-code custom RESTful APIs for each microservice in the architecture. It can take a developer three-weeks to hand-code a simple RESTful API. 
+
+You can bypass this development time with a modern iPaaS (Integration Platform as a Service) like DreamFactory. The DreamFactory IPaaS includes an automatic API generation feature that helps you convert any database into REST API in just a few minutes. DreamFactory also allows you to instantly convert a SOAP Web Service into REST API – which applies REST endpoints to your SOAP APIs, which makes them easier to work with.

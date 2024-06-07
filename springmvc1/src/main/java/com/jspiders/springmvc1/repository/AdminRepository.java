@@ -62,13 +62,17 @@ public class AdminRepository {
 		return null;
 	}
 
-	public AdminPOJO createAccount(String username, String password) {
+	public AdminPOJO createAccount(String username, String email,long contact, String city, String password, String confirmPassword) {
 		openConnection();
 		transaction.begin();
 		
 		AdminPOJO pojo = new AdminPOJO();
 		pojo.setUsername(username);
+		pojo.setEmail(email);
+		pojo.setContact(contact);
+		pojo.setCity(city);
 		pojo.setPassword(password);
+		pojo.setConfirmPassword(confirmPassword);
 		
 		manager.persist(pojo);
 		

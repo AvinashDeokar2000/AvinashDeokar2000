@@ -21,10 +21,28 @@ public class StudentController {
 	
 	
 	// Home page Controller
-	@GetMapping("/home")
-	public String home() {
-		return "Home";
+	@GetMapping("/javaVideo")
+	public String javaVideo() {
+		return "JavaVideo";
 	}
+	
+	// Home page Controller
+		@GetMapping("/pythonVideo")
+		public String pythonVideo() {
+			return "PythonVideo";
+		}
+		
+		// Home page Controller
+		@GetMapping("/communicationVideo")
+		public String communicationVideo() {
+			return "CommunicationVideo";
+		}
+		
+		// Home page Controller
+		@GetMapping("/home")
+		public String home() {
+			return "Home";
+		}
 
 	// Add Page Controller
 	@GetMapping("/add")

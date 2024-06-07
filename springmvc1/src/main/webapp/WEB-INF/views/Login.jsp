@@ -25,8 +25,17 @@ legend {
 }
 
 body {
-	background-image:url("")
 	background-size: 100%;
+}
+input{
+       margin:5px;
+}
+#c{
+ margin-left:50px;
+ margin-right:-15px;
+}
+.a{
+width:60px;
 }
 </style>
 </head>
@@ -55,11 +64,12 @@ body {
 						<td><input type="password" name="password"></td>
 					</tr>
 				</table>
-				<input type="submit" value="LOGIN">
+				<input id="c" type="submit" value="LOGIN">
+				<a href="http://localhost:8080/springmvc1/createAccount"><input id="c" class="a" type="text" value="SING UP"></a>
 			</form>
 
 		</fieldset>
-		<a href="http://localhost:8080/springmvc1/createAccount">CreateAccount</a>
+		
 	</div>
 
 </body>

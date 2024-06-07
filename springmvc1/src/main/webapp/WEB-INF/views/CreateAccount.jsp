@@ -53,8 +53,24 @@ body {
 						<td><input type="text" name="username"></td>
 					</tr>
 					<tr>
+						<td>Email</td>
+						<td><input type="text" name="email"></td>
+					</tr>
+					<tr>
+						<td>Contact</td>
+						<td><input type="text" name="contact"></td>
+					</tr>
+					<tr>
+						<td>City</td>
+						<td><input type="text" name="city"></td>
+					</tr>
+					<tr>
 						<td>Password</td>
 						<td><input type="text" name="password"></td>
+					</tr>
+					<tr>
+						<td>ConfirmPassword</td>
+						<td><input type="text" name="confirmPassword"></td>
 					</tr>
 				</table>
 				<input type="submit" value="CREATE ACCOUNT">

@@ -17,8 +17,8 @@ public class AdminService {
 		return pojo;
 	}
 
-	public AdminPOJO createAccount(String username, String password) {
-		AdminPOJO pojo = repository.createAccount(username, password);
+	public AdminPOJO createAccount(String username, String email,long contact,String city, String password, String confirmPassword) {
+		AdminPOJO pojo = repository.createAccount(username, email, contact, city, password, confirmPassword);
 		return pojo;
 	}
 

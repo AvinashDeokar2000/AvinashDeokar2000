@@ -15,6 +15,10 @@ public class AdminPOJO {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String username;
+	private String email;
+	private long contact;
+	private String city;
 	private String password;
-
+	private String confirmPassword;
+	
 }

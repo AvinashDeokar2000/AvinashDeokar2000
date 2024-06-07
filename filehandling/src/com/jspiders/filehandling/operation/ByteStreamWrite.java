@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class ByteStreamWrite {
 	public static void main(String[] args) throws IOException {
-		File file=new File ("D:\\WEJA2\\filehandling\\Demo.text");
+		File file=new File ("C:\\Users\\Dell\\git\\repository2\\filehandling\\Demo.text");
 		
 		if (file.exists()) {
 			FileOutputStream fileOutputStream=new FileOutputStream(file);

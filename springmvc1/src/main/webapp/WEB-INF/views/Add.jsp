@@ -24,6 +24,10 @@ legend {
 	color: white;
 	background-color: #333;
 }
+body{
+            background-image: url("https://st2.depositphotos.com/1757635/8830/i/450/depositphotos_88302772-stock-photo-global-business-strategy.jpg");
+            background-size: 100%;
+}
 </style>
 </head>
 <body>
